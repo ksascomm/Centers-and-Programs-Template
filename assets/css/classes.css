@@ -1,0 +1,474 @@
+/* Table of Contents
+==================================================
+    1.0 Special Classes
+    2.0 Containers
+    	2.1 Header Container
+    	2.2 Content Container
+    	2.3 Footer Container
+	3.0 Footer Content
+		3.1 Copyright
+		3.2 Social Media
+	4.0 Navigation
+		4.1 Main Menu
+		4.2 Left Side Nav
+	5.0 Header Content
+		5.1 Logo and Title
+		5.2 Search Bar
+	6.0 Homepage
+	7.0 Pagination and Read More sections
+
+/* 1.0 Special Classes
+___________________________________________________________*/
+.green {
+	color: #95a739;
+}
+
+.yellow {
+	color: #c4a41d;
+}
+
+.blue,
+h3 a {
+	color:#679bcd;
+}
+
+.label { 
+	font-weight: 700;
+}
+
+.clearboth {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;	
+}
+
+.floatleft {
+	float:left;
+	margin-right:15px;
+}
+
+.floatright {
+	float:right;
+	margin-left: 15px;
+}
+
+#main img.bordernone {
+	border:none;
+	background: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow:none;
+	
+	}
+.floathome {
+	border-left: 1px solid #CCC;
+	float:right;
+	width:38%;
+	padding-left:15px;
+	margin-left:30px;
+}
+
+.floathome h4 {
+	margin-left:15px;}
+
+
+.divider,
+hr {
+	width:100%;
+	height:3px;
+	margin-bottom: 1.6em;
+	border-bottom: ridge 5px #fafafa;
+
+}
+
+.video-container { /* Wrap around iFrame and SWF embeds for responsive sizing */
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed, {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+blockquote {
+	float:right;
+	color: #C4A41D;
+	font-weight: bold;
+	max-width:30%;
+	font-size:1.3em;
+	line-height: 1.75em;
+	margin-left: 1.625em;
+}
+
+img.attachment-thumbnail {
+max-width:175px;
+}
+
+/* 2.0 Containers
+----------------------------------- */
+/* 2.1 Header Container
+----------------------------------- */
+#container-head {
+	width:100%;
+	background: #333;
+}
+
+#nav-break {
+	background: url('../img/header_bg.png') repeat-x left bottom;
+	height:27px;
+	position:relative;
+	z-index: 2;
+}
+
+#header {
+	width:100%;
+	max-width: 960px;
+	margin: 0 auto;
+	display:block;
+}
+
+#header-left {
+	width: 22.9166666666667%; /* 220px / 960px */
+	min-width: 175px;
+	float:left;
+}
+
+#header-right {
+	width: 77.0833333333333%; /* 740px / 960px */
+	float:right;
+}
+
+/* 2.2 Content Container
+----------------------------------- */
+#container-mid {
+	width:100%;
+}
+
+#accordion_background {
+	width:100%;
+    background-color: #000;
+    margin-top:-14px;
+}
+
+#main {
+	width:100%;
+	max-width: 960px;
+	margin: 0 auto;
+	display: block;
+}
+
+#main img {
+	border: solid #f1f1f1 9px;
+	-webkit-box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    -3px 3px 5px rgba(50, 50, 50, 0.5);
+	box-shadow:         -3px 3px 5px rgba(50, 50, 50, 0.5);
+	margin-bottom: 1em;
+}
+
+#content {
+	width: 90%; /* 740px / 960px */
+	padding:5%;
+}
+
+
+/* 2.3 Footer Container
+----------------------------------- */
+#container-foot {
+	background: #a9aaa4 url('../img/bg_footer.png') repeat-x left top;
+	width:100%;
+}
+
+#footer {
+	width:100%;
+	max-width: 960px;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+}
+
+#footer-left {
+	width: 77.0833333333333%; /* 740px / 960px */
+	float: left;
+	padding-bottom: 5%;
+	margin-top:45px;
+}
+
+#footer-right {
+	width: 22.9166666666667%; /* 220px / 960px */
+	float:right;
+	margin-top:45px;
+}
+
+/* 3.0 Footer Content
+----------------------------------- */
+/* 3.1 Copyright
+----------------------------------- */
+#footer p {
+	margin:0;
+}
+
+#footer p a {
+	color: #444;
+	font-size:.8em;
+}
+	
+#footer #address-widget .textwidget { /* For Homepage only to display department address */
+	font-size: 0.75em;
+	line-height: 1.6em;
+	border-bottom:none;
+	padding:0;
+}
+
+/* 3.1 Social Media
+----------------------------------- */
+#social-media {
+	list-style:none;
+	height:32px;
+	margin-left: 0;
+	margin-bottom:3px;
+
+}
+
+#social-media li {
+	display: block;
+	float:left;
+}
+
+#social-media .facebook {
+	background: url('../img/facebook.png') no-repeat 0 0;
+	height:32px;
+	width:35px;
+}
+
+#social-media .youtube {
+	background: url('../img/youtube.png') no-repeat 0 0;
+	height:31px;
+	width:35px;
+}
+
+#social-media .rss {
+	background: url('../img/rss.png') no-repeat 0 0;
+	height:31px;
+	width:35px;
+}
+
+#social-media .facebook:hover,
+#social-media .youtube:hover,
+#social-media .rss:hover {
+	background-position:0 -32px;
+}
+
+#social-media .facebook span,
+#social-media .youtube span,
+#social-media .rss span {
+	position:absolute;
+	top:-999em;
+}
+
+/* 4.0 Nav
+---------------------------------------------*/
+/* 4.1 Nav - Main Menu
+---------------------------------------------*/
+#nav {
+	width:100%;
+	clear:both;
+	border-top: solid 1px #666666;
+}
+.menu-main-menu-container {
+	width:100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#nav a {
+	color:#F7F7F7;
+	padding:4px;
+
+}
+
+#nav a:hover,
+#nav a:active,
+#nav li.current_page_item a {
+	color:#333333;
+	background-color: #fcd323;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#nav ul { /* all lists */
+	margin: 0 auto;
+	width:100%;
+	max-width: 960px;
+	padding: 0;
+	font-weight: 700;
+	font-size: 1em;
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform: uppercase;
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-ms-filter:none;
+    filter:none;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav ul li:last-child {
+	border-right: none;
+}
+
+#nav ul li {
+	margin-right: 1%; /* 35px / 960px */
+	padding-right:1%;
+	padding-top:0.75em;
+	padding-bottom: 0.75em;
+	border-right: solid 1px #666666;
+}
+ 
+#nav ul li a {
+	display: block;
+}
+ 
+#nav li { /* all list items */
+	float: left;
+}
+
+
+/* 5.0 Header Content - Logo and Title
+---------------------------------------------*/
+/* 5.1 Logo and Title
+---------------------------------------------*/
+#blogtitle {
+	margin-left: 5.4054054054054%; /* 40px / 740px */
+	margin-top: 4.7297297297297%; /* 35px /740px */
+	margin-bottom: 3.3783783783784%; /*25px / 740px */
+	float:left;
+}
+
+#blogtitle h1,
+#blogtitle h1 a {
+	color:#FFF;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: .9em;
+	margin:0;
+	padding:0;
+}
+
+#blogtitle h1.little {
+	font-size: 1.05em;
+}
+
+#logo {
+	min-width: 175px;
+}
+
+/* 5.2 Search Bar and Search Results
+___________________________________________________________*/
+#searchbar {
+	float:right;
+	position:relative;
+	width: 220px;
+	margin-top: 2.027027027027027%; /* 15px /740px */
+
+}
+#searchbar input {
+	background-color: #686868;
+	border-color: #343434;
+	color: #999999;
+}
+
+#searchbar input[type="submit"] {
+	background: url('../img/search.png');
+	border:none;
+	padding:0;
+	margin:0;
+	position:absolute;
+	right:3px;
+	top:3px;
+	height:25px;
+	width: 25px;
+	text-indent: -9999px;
+	}
+
+#searchresults {
+	width:100%;
+	max-width: 960px;
+	background: #e2e1df;
+	margin: 40px auto;
+	display: block;
+}
+
+#searchresults h3 {
+	margin-bottom: 0;
+	margin-top:10px;
+}
+
+
+/* 6.0 Homepage
+----------------------------------*/
+#homepage {
+	width:100%;
+	max-width: 960px;
+	margin: 0 auto;
+	display: block;
+	padding-top:35px;
+	
+}
+
+#homepage p {
+	padding:0 10px;
+}
+
+
+/* 7.0 Pagination & Read More Sections
+___________________________________________________________*/
+.pagination {
+	margin-left:50%;
+	padding-top: 2.272727272727273%; /* 15px /675px */
+	padding-bottom: 2.272727272727273%; /* 15px /675px */
+}
+
+.page-numbers { 
+	padding:3px;
+	-webkit-box-shadow: -2px 2px 2px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    -2px 2px 2px rgba(50, 50, 50, 0.5);
+	box-shadow:         -2px 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+.page-numbers.current { 
+	color: #333; 
+}
+
+.aside {
+	margin: 10px auto;
+	width:100%;
+	padding: 0 1em 0.5em 1em;
+	clear: left;
+}
+
+.wysiwyg-read-more-link {
+	font-size: 1em;
+	font-weight: 700;
+	width: 250px;
+	clear: both;
+	margin: 0 0 25px;
+	background: url('../img/expand.png') no-repeat 0px -25px;
+	padding-left: 30px;
+	padding-bottom:6px;
+}
+
+
+
